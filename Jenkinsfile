@@ -12,8 +12,12 @@ pipeline {
 
         stage ('Build') {
             steps {
-                echo 'This is a minimal pipeline.'
-            }
+
+             withMaven(maven : 'Maven 3.3.9') {
+                sh 'mvn clean install'
+             }
+
+
         }
     }
 }
