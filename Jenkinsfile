@@ -3,7 +3,7 @@ pipeline {
     stages {
         stage ('Initialize') {
             steps {
-                
+                 echo 'This is a Initialize pipeline.'
             }
         }
 
