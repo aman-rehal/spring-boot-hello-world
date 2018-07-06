@@ -21,7 +21,7 @@ pipeline {
 
         stage ('Run') {
             steps {
-             sh 'java -jar target\spring.boot.play-1.0-SNAPSHOT.jar'
+             sh 'java -jar ./target/spring.boot.play-1.0-SNAPSHOT.jar'
         }
     }
 }
