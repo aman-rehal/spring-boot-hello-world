@@ -1,0 +1,6 @@
+spring:
+   application:
+      name: HelloWorldSpringBootApp
+
+server:
+   port: 4545

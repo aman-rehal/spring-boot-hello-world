@@ -18,6 +18,11 @@ pipeline {
             steps {
              sh 'mvn clean install'
         }
+
+        stage ('Run') {
+            steps {
+             sh 'java -jar target\spring.boot.play-1.0-SNAPSHOT.jar'
+        }
     }
 }
 }
