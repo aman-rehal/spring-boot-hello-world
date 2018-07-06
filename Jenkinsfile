@@ -12,12 +12,7 @@ pipeline {
 
         stage ('Build') {
             steps {
-
-             withMaven(maven : 'Maven 3.3.9') {
-                sh 'mvn clean install'
-             }
-
-
+             sh 'mvn clean install'
         }
     }
 }
