@@ -1,10 +1,18 @@
 pipeline {
     agent any
+
     stages {
+        stage ('Initialize') {
+            steps {
+                sh '''
+                    echo "PATH = ${PATH}"
+                '''
+            }
+        }
 
         stage ('Build') {
             steps {
-                bat 'mvn clean install'
+                echo 'This is a minimal pipeline.'
             }
         }
     }
