@@ -20,10 +20,11 @@ pipeline {
             }
         }
 
-        stage ('Run') {
-            steps {
-                 sh 'java -jar ./target/spring.boot.play-1.0-SNAPSHOT.jar'
-            }
+        stage ('Deploy') {
+          steps {
+            sh 'curl --insecure --user ion:bbcc11223344 -T spring.boot.play-1.0-SNAPSHOT.jar sftp://10.10.9.58/tmp/'
+          }
         }
+
     }
 }
