@@ -15,5 +15,10 @@ public class HelloWorldExampleTest {
         assertTrue(HelloWorldExample.HELLO_WORLD.equals(helloWorldExample.sayHello()));
     }
 
+    @Test
+    public void WHEN_asked_for_greeting_THEN_response_should_be_not_null() {
+        assertNotNull(helloWorldExample.sayHello());
+    }
+
 
 }
