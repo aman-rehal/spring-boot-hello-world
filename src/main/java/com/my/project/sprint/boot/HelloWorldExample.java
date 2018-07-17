@@ -9,7 +9,7 @@ import org.springframework.web.bind.annotation.RestController;
 @EnableAutoConfiguration
 public class HelloWorldExample {
 
-	public static final String HELLO_WORLD = "Hello Everyone!!!";
+	public static final String HELLO_WORLD = "Hello Everyone, Good evening!!!";
 
 	@RequestMapping("/")
 	String sayHello() {
