@@ -9,14 +9,14 @@ import org.springframework.web.bind.annotation.RestController;
 @EnableAutoConfiguration
 public class HelloWorldExample {
 
-	public static final String HELLO_WORLD = "Hello World!!!";
+	public static final String HELLO_WORLD = "Hello Everyone!!!";
 
 	@RequestMapping("/")
 	String sayHello() {
 		return HELLO_WORLD;
 	}
 
-	public static void main(String[] args) throws Exception {
+	public static void main(String[] args) {
 		SpringApplication.run(HelloWorldExample.class, args);
 	}
 
